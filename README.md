@@ -10,18 +10,18 @@ The dataset comprises a collection of data comparing the performance of two sepa
 ### Data Distribution
 All the histograms show a somewhat symmetrical shape. This suggests that the number of clicks and conversions is relatively evenly distributed, with few extreme outliers on either the high or low end.
 
-- **Facebook had more frequent higher conversion days** than AdWords, which had very low conversion rates (less than 6 and 6-10).
-- There is a significant variance in the number of **high conversion days** between the two campaigns.
-- The **absence of any days** with conversions between 10-15 and more than 15 in AdWords indicates a need to review what strategies were changed or what external factors could have influenced these numbers.
+- Facebook had more frequent higher conversion days than AdWords, which had very low conversion rates (less than 6 and 6-10).
+- There is a significant variance in the number of high conversion days between the two campaigns.
+- The absence of any days with conversions between 10-15 and more than 15 in AdWords indicates a need to review what strategies were changed or what external factors could have influenced these numbers.
 
 ### Correlation Analysis
-- A **correlation coefficient of 0.87** indicates a strong positive linear relationship between clicks on **Facebook ads and sales**, suggesting that as the number of clicks increases, sales tend to increase as well.
+- A correlation coefficient of **0.87** indicates a strong positive linear relationship between clicks on Facebook ads and sales, suggesting that as the number of clicks increases, sales tend to increase as well.
 - This strong correlation suggests that **Facebook ads are highly effective in driving sales**.
-- A **correlation coefficient of 0.45** for AdWords ads and sales indicates a **moderate** positive relationship. While AdWords contributes to sales, other factors may influence its effectiveness.
+- A correlation coefficient of **0.45** for AdWords ads and sales indicates a **moderate** positive relationship. While AdWords contributes to sales, other factors may influence its effectiveness.
 
 ### Statistical Testing
 - The **mean number of conversions** from Facebook ads (**11.74**) is substantially higher than AdWords ads (**5.98**).
-- The **T statistic (32.88)** and **extremely small p-value (9.35e-134)** provide strong evidence against the null hypothesis, indicating that **Facebook ads generate more conversions**.
+- The **T statistic (32.88)** and **extremely small p-value (9.35e-134)** provide strong evidence against the null hypothesis, indicating that Facebook ads generate more conversions.
 - The results suggest **reallocating resources toward Facebook advertising**.
 
 ### Regression Analysis
@@ -33,25 +33,18 @@ All the histograms show a somewhat symmetrical shape. This suggests that the num
 - Conversion rates fluctuate across months, with dips in **February, April, May, June, August, and November**.
 - **CPC values** are lowest in **May and November**, indicating periods of cost-effective advertising.
 
-### Cointegration Analysis
-- The **p-value is significantly lower** than the chosen significance level, leading to **rejection of the null hypothesis**.
-- This indicates a **stable long-term relationship** between **advertising spend and conversions**, allowing for better optimization strategies.
+## Recommendations
+- **Increase investment in Facebook ads**, as they have shown a higher conversion rate.
+- **Optimize AdWords campaigns** by identifying factors affecting lower conversion rates.
+- **Allocate more budget during May and November**, when CPC is lower, to maximize cost-efficiency.
+- **Leverage Monday and Tuesday** for ad campaigns, as these days show the highest conversion rates.
+- **Conduct further analysis** on factors influencing conversion rate dips in specific months.
+- **Use regression insights** to set realistic campaign goals and optimize budget allocation.
 
 ## Methodologies Used
 - **A/B Testing**
 - **Regression Analysis**
 - **Hypothesis Testing**
 
-## Libraries Used
-```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import scipy.stats as st
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import r2_score, mean_squared_error
-from statsmodels.tsa.seasonal import seasonal_decompose
-from statsmodels.tsa.stattools import coint
-import warnings
-warnings.filterwarnings('ignore')
+```
+
